@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://Episode-52.github.io/al-folio/sitemap.xml
