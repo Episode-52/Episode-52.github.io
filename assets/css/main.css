@@ -1432,17 +1432,25 @@ ul.timeline li::before {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  align-items: start;
 }
 
 .student-card {
   text-align: center;
 }
 
+.student-photo {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .student-photo img {
   width: 100%;
-  max-width: 260px;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
@@ -1455,3 +1463,4 @@ ul.timeline li::before {
   font-size: 0.9rem;
   color: #555;
 }
+
