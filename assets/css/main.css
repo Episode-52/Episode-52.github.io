@@ -1455,10 +1455,12 @@ ul.timeline li::before {
   color: #555;
 }
 
-body {
+/*body {
     background-image: url("/assets/img/background.jpg");
-    background-size: cover;          /* 覆盖整个屏幕 */
-    background-position: center;     /* 居中 */
-    background-repeat: no-repeat;    /* 不平铺 */
-    background-attachment: fixed;    /* 滚动时背景不动 */
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
 }
+*/
+
