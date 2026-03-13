@@ -102,36 +102,30 @@
 
                 <hr>
 
-                <figure>
-                    <div class="video-container" style="max-width: 360px; position: relative; cursor: pointer;">
-                    <video 
-                        id="myVideo"
-                        class="img-fluid z-depth-1 rounded" 
-                        poster="/assets/img/your-placeholder.webp"  preload="none"
-                        style="width: 100%; display: block;">
-                    <source src="/assets/video/b73494f7b1cab8eccf10b411096766b7.mp4" type="video/mp4">
-                    </video>
-        
-                    <div class="play-overlay" onclick="playVideo()">
-                    <i class="fas fa-play"></i>
-                    </div>
+                <figure style="float: right; clear: right; margin-left: 30px; margin-bottom: 20px;">
+                    <div class="video-container" style="max-width: 360px;">
+
+                        <video id="myVideo" class="img-fluid z-depth-1 rounded"
+                            poster="/assets/video/b73494f7b1cab8eccf10b411096766b7.webp" preload="none"
+                            style="width: 100%; display: block; cursor: pointer;">
+                            <source src="/assets/video/b73494f7b1cab8eccf10b411096766b7.mp4" type="video/mp4">
+                        </video>
+
                     </div>
                 </figure>
 
                 <script>
-                function playVideo() {
+                    // 保留点击视频画面本身即可播放/暂停的功能
                     var video = document.getElementById('myVideo');
-                    if (video.paused) {
-                         video.play();
-                    video.controls = true; // 播放后显示进度条
-                    } else {
-                    video.pause();
-                }
-}
-
-// 绑定点击视频本身也能播放
-document.getElementById('myVideo').addEventListener('click', playVideo);
-</script>
+                    video.addEventListener('click', function () {
+                        if (video.paused) {
+                            video.play();
+                            video.controls = true; // 播放后显示自带的控制条
+                        } else {
+                            video.pause();
+                        }
+                    });
+                </script>
 
 
 
@@ -155,24 +149,24 @@ document.getElementById('myVideo').addEventListener('click', playVideo);
         <div class="profile float-right">
         </div>
         <div class="clearfix">
-            <p>This section outlines the requirements for joining the laboratory and the opportunities 
+            <p>This section outlines the requirements for joining the laboratory and the opportunities
                 and benefits available to members (e.g., for doctoral students/postdoctoral researchers).</p>
         </div>
-                <h3 class="post-title"> section 2 </h3>
+        <h3 class="post-title"> section 2 </h3>
         <div class="profile float-right">
         </div>
         <div class="clearfix">
-            <p>This section outlines the requirements for joining the laboratory and the opportunities 
+            <p>This section outlines the requirements for joining the laboratory and the opportunities
                 and benefits available to members (e.g., for master's students/undergraduate students).</p>
         </div>
-                <h3 class="post-title"> section 3 </h3>
+        <h3 class="post-title"> section 3 </h3>
         <div class="profile float-right">
         </div>
         <div class="clearfix">
-            <p>This section outlines the requirements for joining the laboratory and the opportunities 
+            <p>This section outlines the requirements for joining the laboratory and the opportunities
                 and benefits available to members (e.g., for research assistants/technical experts).</p>
         </div>
-                <h3 class="post-title"> section 4 </h3>
+        <h3 class="post-title"> section 4 </h3>
         <div class="profile float-right">
         </div>
         <div class="clearfix">
