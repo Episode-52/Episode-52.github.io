@@ -102,23 +102,40 @@
 
                 <hr>
 
-                <div class="profile float-right">
-                    <figure>
-                        <picture>
-                            <source class="responsive-img-srcset" media="(max-width: 240px)"
-                                srcset="/assets/video/b73494f7b1cab8eccf10b411096766b7.webp" />
-                            <source class="responsive-img-srcset" media="(max-width: 360px)"
-                                srcset="/assets/video/b73494f7b1cab8eccf10b411096766b7.webp" />
-                            <source class="responsive-img-srcset" media="(max-width: 480px)"
-                                srcset="/assets/video/b73494f7b1cab8eccf10b411096766b7.webp" />
-                            <img src="/assets/video/b73494f7b1cab8eccf10b411096766b7.mp4" class="img-fluid z-depth-1 rounded"
-                                style="max-width: 360px;" alt="test" />
-                        </picture>
-                    </figure>
-                    <div class="address">
-                        <p>Lab</p>
+                <figure>
+                    <div class="video-container" style="max-width: 360px; position: relative; cursor: pointer;">
+                    <video 
+                        id="myVideo"
+                        class="img-fluid z-depth-1 rounded" 
+                        poster="/assets/img/your-placeholder.webp"  preload="none"
+                        style="width: 100%; display: block;">
+                    <source src="/assets/video/b73494f7b1cab8eccf10b411096766b7.mp4" type="video/mp4">
+                    </video>
+        
+                    <div class="play-overlay" onclick="playVideo()">
+                    <i class="fas fa-play"></i>
                     </div>
-                </div>
+                    </div>
+                </figure>
+
+                <script>
+                function playVideo() {
+                    var video = document.getElementById('myVideo');
+                    if (video.paused) {
+                         video.play();
+                    video.controls = true; // 播放后显示进度条
+                    } else {
+                    video.pause();
+                }
+}
+
+// 绑定点击视频本身也能播放
+document.getElementById('myVideo').addEventListener('click', playVideo);
+</script>
+
+
+
+
                 <div class="address">
                     <h1 class="post-title"> About Lab </h1>
                 </div>
