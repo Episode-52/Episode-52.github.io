@@ -1,0 +1,157 @@
+/* style.css (based on UChicago's Twentytwelve) */
+body {
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    color: #222;
+    font-weight: 600;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+a {
+    color: #295685;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cf2e2e;
+    text-decoration: underline;
+}
+
+.site-header {
+    background: #f1f1f1;
+    padding: 0 0 1.6em 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+.site-title {
+    font-size: 2em;
+    margin: 0.1em 0 0 0;
+}
+
+.site-title a {
+    color: #222;
+}
+
+.site-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.main-navigation {
+    background: #295685;
+    margin: 0 auto 1em auto;
+    box-shadow: 0 2px 4px #eee;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-navigation li {
+    display: inline-block;
+}
+
+.main-navigation a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8em 1.3em;
+    text-decoration: none;
+    border-right: 1px solid #1e4063;
+}
+
+.main-navigation li:last-child a {
+    border-right: none;
+}
+
+.main-navigation a:hover, .main-navigation .current_page_item > a {
+    background: #cf2e2e;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 2em auto 1em auto;
+    display: flex;
+    gap: 32px;
+    padding: 0 1em;
+}
+
+#primary.site-content {
+    flex: 2 1 700px;
+}
+
+#secondary.widget-area {
+    flex: 1 1 250px;
+    background: #fafafa;
+    padding: 1.1em 1em;
+    border-left: 1px solid #ebebeb;
+    font-size: 1em;
+}
+
+.widget {
+    margin-bottom: 2em;
+}
+
+.widget-title {
+    border-bottom: 1px solid #e5e5e5;
+    color: #295685;
+    padding-bottom: 0.4em;
+    margin-bottom: 0.6em;
+    font-size: 1.12em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.entry-title {
+    color: #222;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: .2em;
+}
+
+.entry-content {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+
+ul, ol {
+    margin: 0 0 1em 1.3em;
+}
+
+.xoxo.blogroll {
+    list-style: none;
+    margin: 0 0 1.4em 0;
+    padding: 0;
+}
+
+.xoxo.blogroll li {
+    margin-bottom: 0.7em;
+}
+
+@media (max-width:900px) {
+    .wrapper { flex-direction: column; }
+    #primary.site-content, #secondary.widget-area { width: 100%; }
+}
